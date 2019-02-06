@@ -24,6 +24,7 @@ class MyStatelessWidget extends StatelessWidget {
     return Center(
       child: Container(
      child: Card(
+       color: Colors.pinkAccent[100],
  child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
