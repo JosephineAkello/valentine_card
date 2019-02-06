@@ -22,26 +22,27 @@ class MyStatelessWidget extends StatelessWidget {
   @override
   Widget build(context) {
     return Center(
-      child: Card(
-        child: Column(
+      child: Container(
+     child: Card(
+ child: Column(
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             const ListTile(
-leading: Icon(Icons.album),
-title:Text('The Enchanted Nightingale'),
-subtitle:Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+leading: Icon(Icons.card_giftcard),
+title:Text('Dear Beloved'),
+subtitle:Text('Will you be my valentine?'),
             ),
             ButtonTheme.bar(
               child: ButtonBar(
                 children: <Widget>[
                   FlatButton(
-                    child: Text('Buy Tickets'),
+                    child: Text('Yaaay'),
                     onPressed: (){
 
                     },
                   ),
                     FlatButton(
-             child: Text('LISTEN'),
+             child: Text('Naaaah'),
              onPressed: (){ },
                     ),
                   ],
@@ -50,7 +51,10 @@ subtitle:Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
             ),
           ],
         ),
+     ),
       ),
-    );
+       
+      );
+    
   }
 }
