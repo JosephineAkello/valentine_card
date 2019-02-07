@@ -31,8 +31,10 @@ class MyStatelessWidget extends StatelessWidget {
             children: <Widget>[
               const ListTile(
                 leading: Icon(Icons.card_giftcard),
+              
                 title: Text('Dear Beloved'),
                 subtitle: Text('Will you be my valentine?'),
+                
               ),
               Column(
                 children: <Widget>[
@@ -49,6 +51,7 @@ class MyStatelessWidget extends StatelessWidget {
 
                         RaisedButton(
                           child: Text('Never ever!!!'),
+                          textColor: Colors.lime[200],
                           color: Colors.pink,
                           onPressed: () {
                             Navigator.push(
@@ -59,11 +62,13 @@ class MyStatelessWidget extends StatelessWidget {
                         ),
                         RaisedButton(
                           child: Text('Naaah'),
+                          textColor: Colors.lime[200],
                           color: Colors.pink,
                           onPressed: () {},
                         ),
                         RaisedButton(
                           child: Text('Yaaay'),
+                          textColor: Colors.lime[200],
                           color: Colors.pink,
                           onPressed: () {},
                         ),
