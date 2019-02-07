@@ -25,7 +25,7 @@ class MyStatelessWidget extends StatelessWidget {
     return Center(
       child: Container(
         child: Card(
-          color: Colors.blueAccent[100],
+          color: Colors.pinkAccent[100],
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
@@ -36,31 +36,39 @@ class MyStatelessWidget extends StatelessWidget {
               ),
               Column(
                 children: <Widget>[
-                  Image.asset(
-                    'assets/valentine.png',
-                    width: 100,
-                    height: 100,
-                    fit: BoxFit.cover,
+                  Image.network(
+                    'https://picsum.photos/300/300/?image=815',
+                    width: 180,
+                    height: 200,
                   ),
-                  Text('I love you'),
                 ],
               ),
               ButtonTheme.bar(
                 child: ButtonBar(
                   children: <Widget>[
-                    FlatButton(
-                      child: Text('Naaah'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeScreen()));
-                      },
-                    ),
-                    FlatButton(
-                      child: Text('Yaaay'),
-                      onPressed: () {},
-                    ),
+
+                        RaisedButton(
+                          child: Text('Never ever!!!'),
+                          color: Colors.pink,
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen()));
+                          },
+                        ),
+                        RaisedButton(
+                          child: Text('Naaah'),
+                          color: Colors.pink,
+                          onPressed: () {},
+                        ),
+                        RaisedButton(
+                          child: Text('Yaaay'),
+                          color: Colors.pink,
+                          onPressed: () {},
+                        ),
+                     
+                   
                   ],
                 ),
               ),
