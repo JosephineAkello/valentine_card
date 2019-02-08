@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'NeverScreen.dart';
 
 void main() {
   runApp(App());
@@ -57,20 +57,28 @@ class MyStatelessWidget extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => HomeScreen()));
+                                    builder: (context) => NeverScreen()));
                           },
                         ),
                         RaisedButton(
                           child: Text('Naaah'),
                           textColor: Colors.lime[200],
                           color: Colors.pink,
-                          onPressed: () {},
+                          onPressed: () {Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => NaahScreen()));},
                         ),
                         RaisedButton(
                           child: Text('Yaaay'),
                           textColor: Colors.lime[200],
                           color: Colors.pink,
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => YaayScreen()));
+                          },
                         ),
                      
                    
