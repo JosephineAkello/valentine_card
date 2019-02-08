@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class NeverScreen extends StatelessWidget {
   Widget build(context) {
     return MaterialApp(
       title: 'This is our thing',
