@@ -8,6 +8,7 @@ class YaayScreen extends StatelessWidget {
         appBar: AppBar(title: Text('Hello')),
         body: Image.network(
           'https://picsum.photos/300/300/?image=1080',
+          width: 350,
         ),
       ),
     );
