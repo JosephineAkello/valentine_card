@@ -7,7 +7,8 @@ class NaahScreen extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('Hello')),
         body: Image.network(
-          'https://picsum.photos/300/300/?image=1080',
+          'https://picsum.photos/300/300/?image=473',
+          width: 350,
         ),
       ),
     );
